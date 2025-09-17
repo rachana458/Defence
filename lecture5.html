@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 5 - Basic Form</title>
+</head>
+<body>
+    <h2>Lecture 5 - Basic Form</h2>
+    <hr>
+
+    <form>
+
+        <h2>Example-1</h2>
+        
+
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" placeholder="e.g: Ram" required>
+        <br><br>
+
+        <label for="surname">Last Name:</label>
+        <input type="text" name="surname" id="surname" placeholder="e.g: Tudu">
+        <br><br>
+
+         <label>Age:</label>
+        <input type="number" name="age" id="age">
+        <br><br>
+
+         <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob" required>
+        <br><br>
+
+    
+       <label>Gender:</label>
+       <br><br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+       <br><br>
+
+
+        <input type="Submit">
+
+    </form>
+ <hr>
+    <h2>University Registration form Example-2</h2>
+    
+    
+
+    <form>
+
+        <h3>Personal Details</h3>
+
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" placeholder="e.g: Arjun" required>
+        <br><br>
+
+        <label for="surname">Last Name:</label>
+        <input type="text" name="surname" id="surname" placeholder="e.g: sharma">
+        <br><br>
+
+
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <h4>Gender</h4>
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <br><br>
+        <label for="female">FeMale</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><br>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <br><br>
+
+
+        <h4>Upload Your photo</h4>
+        <input type="file" name="file">
+
+        <br><br>
+
+        <h3>Contact Information</h3>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email">
+
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
+
+        <br><br>
+        
+        <label for="Address">Mailing Address</label>
+        <br>
+        <textarea name="Address" id="Address" rows="10" cols="40"></textarea>
+        
+        <br><br>
+
+        <h3>Academic Information</h3>
+         
+        <label for="course">Select Your Course:</label>
+        <select name="course" id="course">
+            <option value="CSE">CSE</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+        </select>
+
+        <br>
+        
+        <h4>Extracurricular Activites</h4>
+
+        <label for="Sports">Sports</label>
+        <input type="checkbox" name="interest" id="Sports" value="Sports">
+        <br><br>
+
+        <label for="Music">Music</label>
+        <input type="checkbox" name="interest" id="Music" value="Music">
+        <br><br>
+
+        <label for="Technology">Technology</label>
+        <input type="checkbox" name="interest" id="Technology" value="Technology">
+        <br><br>
+
+        <label for="voluntering">voluntering</label>
+        <input type="checkbox" name="interest" id="voluntering" value="voluntering">
+        <br><br>
+
+        
+
+        <h3>Create Your account</h3>
+         
+        <label for="pass">Create Password</label>
+        <input type="password" name="password" id="pass">
+        <br><br>
+
+        <label for="secu">Security answer</label>
+        <input type="text" name="Security" id="secu">
+
+    
+
+<br><br>
+       
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+
+     <hr>
+
+    </form>
+
+
+   <h2>Course Feedback Exampl-3</h2>
+  <p>Please take a moment to share your thoughts about the lectures.</p>
+
+  <form action="#" method="post">
+    
+    <!-- Name -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+    <!-- Lecture Selection (Multiple) -->
+    <p>Which lecture(s) are you giving feedback on?</p>
+    <input type="checkbox" id="lecture1" name="lecture" value="Lecture 1">
+    <label for="lecture1">Lecture 1</label><br>
+
+    <input type="checkbox" id="lecture2" name="lecture" value="Lecture 2">
+    <label for="lecture2">Lecture 2</label><br>
+
+    <input type="checkbox" id="lecture3" name="lecture" value="Lecture 3">
+    <label for="lecture3">Lecture 3</label><br>
+
+    <input type="checkbox" id="lecture4" name="lecture" value="Lecture 4">
+    <label for="lecture4">Lecture 4</label><br>
+
+    <input type="checkbox" id="lecture5" name="lecture" value="Lecture 5">
+    <label for="lecture5">Lecture 5</label><br>
+
+    <input type="checkbox" id="lecture6" name="lecture" value="Lecture 6">
+    <label for="lecture6">Lecture 6</label><br><br>
+
+    <!-- Rating -->
+    <label>How would you rate the overall course so far?</label><br>
+    <input type="radio" id="excellent" name="rating" value="Excellent">
+    <label for="excellent">Excellent</label><br>
+    <input type="radio" id="good" name="rating" value="Good">
+    <label for="good">Good</label><br>
+    <input type="radio" id="average" name="rating" value="Average">
+    <label for="average">Average</label><br>
+    <input type="radio" id="poor" name="rating" value="Poor">
+    <label for="poor">Poor</label><br><br>
+
+    <!-- Comments -->
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+  
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Feedback">
+
+  </form>
+</body>
+</html>

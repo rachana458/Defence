@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3 - HTML Nested Lists & Tables</title>
+</head>
+<body>
+
+    
+<h2>Lecture 3 - HTML Nested Lists & Tables</h2>
+
+<h3>Lists</h3>
+<p>Lists are of two types: ordered and unordered list.</p>
+<h3>Nested Lists Example</h3>
+    <pre>&lt;ol&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</pre>
+
+
+<h4>Output:</h4>
+<ol>
+    <li>Fruits
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+</ul>
+</li>
+</ol>
+    <h3>Table Example 1</h3>
+    <table border="1" cellpadding="6">
+      <tr><th>Product</th><th>Qty</th><th>Price</th></tr>
+      <tr><td>Apple</td><td>10</td><td>$5</td></tr>
+      <tr><td>Banana</td><td>6</td><td>$3</td></tr>
+    </table>
+
+    <h3>Table Example 2</h3>
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">row 1 cell 1</td>
+                <td>row1 cell2</td>
+                <td>row1 cell3</td>
+            </tr>
+            <tr>
+                <td>row2 cell2</td>
+                <td>row2 cell3</td>
+            </tr>
+            <tr>
+                <td colspan="3">row3 cell1</td>
+            </tr>
+        </tbody>
+    </table>
+
+<h3>Table Example 3</h3>
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Level 1</th>
+                <th>Level 2</th>
+                <th>Level 3</th>
+                <th>Level 4</th>
+                <th>Level 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">System</td>
+                <td rowspan="4">System Apps</td>
+                <td rowspan="3">System Env</td>
+                <td>App Test</td>
+                <td rowspan="2">Foo</td>
+            </tr>
+                <td>App Memory</td>
+            <tr>
+                <td>App Test</td>
+                <td rowspan="2">Bar</td>
+            </tr>
+            <tr>
+                <td>System Env 2</td>
+                <td>App Memory</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2">System memory</td>
+                <td>Memory Fun</td>
+                <td>Foo</td>
+            </tr>
+            <tr>
+                <td>App test</td>
+                <td>Bar</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Table Example 4</h3>
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hours</td>
+                <th>mon</td>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thru</th>
+                <th>fri</th>
+            </tr>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Arts</td>
+            <tr>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+               <th colspan="5">Lunch</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Arts</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
